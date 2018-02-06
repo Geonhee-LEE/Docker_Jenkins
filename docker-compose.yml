@@ -3,9 +3,9 @@ version: '2'
 services:
   app:
     build: .
-    image: ${DOCKER_USER_ID}/ubuntu
+    image: geonhee/ubuntu
   unit:
-    image: ${DOCKER_USER_ID}/ubuntu
+    image: geonhee/ubuntu
     command: bash -c "echo hello world"
   production:
-    image: ${DOCKER_USER_ID}/ubuntu:${BUILD_NUMBER}
+    image: geonhee/ubuntu:${BUILD_NUMBER}
