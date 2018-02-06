@@ -1,2 +1,2 @@
-FROM docker-jenkins/ubuntu
+FROM geonhee/ubuntu
 
