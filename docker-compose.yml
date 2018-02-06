@@ -3,9 +3,9 @@ version: '2'
 services:
   app:
     build: .
-    image: docker-jenkins/ubuntu
+    image: geonhee/ubuntu
   unit:
-    image: docker-jenkins/ubuntu
+    image: geonhee/ubuntu
     command: bash -c "echo hello world"
   production:
-    image: docker-jenkins/ubuntu:${BUILD_NUMBER}
+    image: geonhee/ubuntu:${BUILD_NUMBER}
