@@ -9,5 +9,3 @@ services:
     command: bash -c "echo hello world"
   production:
     image: docker-jenkins/ubuntu:${BUILD_NUMBER}
-    ports:
-      - 10001:4567
