@@ -3,14 +3,11 @@ version: '2'
 services:
   app:
     build: .
-    image: ${DOCKER_USER_ID}/docker-jenkins
+    image: ubuntu
   unit:
-    image: docker-jeckins:2
-    volumes:
-      - ${WORKSPACE_PATH}/${JOB_NAME}:/app
-    working_dir: /app
+    image: ubuntu
     command: bash -c "echo hello world"
   production:
-    image: ${DOCKER_USER_ID}/docker-jenkins:${BUILD_NUMBER}
+    image: ubuntu:${BUILD_NUMBER}
     ports:
       - 10001:4567
