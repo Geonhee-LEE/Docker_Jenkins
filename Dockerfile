@@ -1,2 +1,2 @@
-FROM ubuntu
+FROM docker-jenkins/ubuntu
 
