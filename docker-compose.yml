@@ -3,11 +3,11 @@ version: '2'
 services:
   app:
     build: .
-    image: ubuntu
+    image: docker-jenkins/ubuntu
   unit:
-    image: ubuntu
+    image: docker-jenkins/ubuntu
     command: bash -c "echo hello world"
   production:
-    image: ubuntu:${BUILD_NUMBER}
+    image: docker-jenkins/ubuntu:${BUILD_NUMBER}
     ports:
       - 10001:4567
